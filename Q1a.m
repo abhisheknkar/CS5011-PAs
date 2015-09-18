@@ -9,10 +9,12 @@ S1nd = 0.1;
 SIGMA1 = SIGMA1 - S1nd * eye(10) + S1nd * ones(10,10);
 MVRV1 = mvnrnd(MU1,SIGMA1,1000);
 
+'Hello!'
+
 MU2 = ones(1,10);
 S2d = 1;
 SIGMA2 = S2d * eye(10);
-S2nd = 0.1 + bbb;
+S2nd = 0.1;
 SIGMA2 = SIGMA2 - S2nd * eye(10) + S2nd * ones(10,10);
 MVRV2 = mvnrnd(MU2,SIGMA2,1000);
 
