@@ -1,0 +1,23 @@
+Step1: Feature Extraction
+--------------------------
+You are given a set of scene images. In this step, the requirement is to extract some features from the images that can be used as input to our SVM. 
+There are many feature extraction techniques. For this assignment, we will follow a color histogram based approach. 
+This is not the best technique for feature extraction, but most likely, the easiest. 
+    How to: (matlab)
+    --------
+1. Read the image into a variable using imread(). Eg: im=imread('filename')
+2. Extract red, green and blue channels from the variable you read into in 1. The sequence is r-g-b. Eg: r=im(:,:,1)
+3. For every channel divide it into 32 bins and find frequency using imhist(). Eg. f1=imhist(r,32)
+4. Concatenate these 32 dimensional feature vectors for every channel to find a 96D vector for the whole image. (sequence r-g-b)
+
+Step2: Classification
+----------------------
+Use the training data to build classification models using the following kernels.
+1. Linear kernel
+2. Polynomial kernel
+3. Gaussian kernel
+4. Sigmoid kernel
+5. Histogram intersection kernel
+
+Come up with the kernel parameters for the various models. 
+You can use a fraction of data supplied to do a n-fold cross validation to find the best model parameters. 
