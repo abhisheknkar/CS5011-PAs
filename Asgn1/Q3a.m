@@ -1,6 +1,6 @@
 clc;clear all;close all;
 % The second feature is the best according to pca()
-
+% Read: http://matlabdatamining.blogspot.in/2010/02/principal-components-analysis.html
 
 Xtrain = csvread('data/DS3/train.csv');
 Ytrain = csvread('data/DS3/train_labels.csv');
