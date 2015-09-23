@@ -1,6 +1,7 @@
 % Ridge Regression on the crime data
-% Observed minimum at around lambda=3000
-lambdamat = 0:1000:100000;
+% Observed minimum at around lambda=2900
+% lambdamat = 0:1000:100000;
+lambdamat = 0:100:10000;
 for n = 1:length(lambdamat)
     lambda = lambdamat(n);
     % Generate 5 folds of X and Y
@@ -22,8 +23,10 @@ for n = 1:length(lambdamat)
         Ytest{i} = Y1(foldind,:);
 
         BETA{i} = ridge(Ytrain{i}, Xtrain{i}, lambda);
-        residue(i) = norm(Ytest{i} - Xtest{i}*BETA{i}) / length(Ytest{i});
-    %   Perform the ridge regression for the fold      
+%         residue(i) = norm(Ytest{i} - Xtest{i}*BETA{i})^2 / length(Ytest{i});
+        residue(i) = norm(Ytest{i} - Xtest{i}*BETA{i})^2;
+
+%   Perform the ridge regression for the fold      
     end
     disp(['Residue for lambda=' num2str(lambda) ' is ' num2str(mean(residue)) '.']);
 end

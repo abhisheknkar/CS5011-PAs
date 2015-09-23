@@ -1,7 +1,7 @@
 % Give csv without "?"
 clc;clear all;close all
 tic
-fid = fopen('data\communities1.data', 'rt');
+fid = fopen('data/communities1.data', 'rt');
 formatstr = ['%f%f%f%s' repmat('%f',1,124) '\n'];
 text = textscan(fid, formatstr, 'Delimiter',',', 'EmptyValue',NaN);
 fclose(fid);
