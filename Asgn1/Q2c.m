@@ -1,7 +1,12 @@
 % Ridge Regression on the crime data
+<<<<<<< HEAD
 % Observed minimum at around lambda=2900
 % lambdamat = 0:1000:100000;
 lambdamat = 0:100:10000;
+=======
+% Observed minimum at around lambda=3000
+lambdamat = 0:1000:20000;
+>>>>>>> ddc9168461e3b1b63fdd598bb0c98e217d302dc7
 for n = 1:length(lambdamat)
     lambda = lambdamat(n);
     % Generate 5 folds of X and Y
