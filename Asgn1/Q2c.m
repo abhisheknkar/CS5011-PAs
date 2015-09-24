@@ -6,25 +6,13 @@ lambdamat = 0:10:200;
 % Observed minimum at around lambda=3000
 % lambdamat = 0:1000:20000;
 % Generate 5 folds of X and Y
-Xtrain = cell(5,1);
-Xtest = cell(5,1);
-Ytrain = cell(5,1);
-Ytest = cell(5,1);
 BETA_RR = cell(5,1);
 BETA_LR = cell(5,1);
 % Random permutation:
-perm = randperm(size(X1,1));
 residue_RR = zeros(5,1);
 residue_LR = zeros(5,1);
 
-for i = 1:5
-    foldsize = round(size(X1,1)/5);
-    foldind = perm((i-1)*foldsize+1:min(i*foldsize,size(X1,1)));
-    Xtrain{i} = stdnormalize( X1(setdiff(1:size(X1,1),foldind),:));
-    Xtest{i} = stdnormalize(X1(foldind,:));
-    Ytrain{i} = stdnormalize(Y1(setdiff(1:size(X1,1),foldind)));
-    Ytest{i} = stdnormalize(Y1(foldind,:));
-end
+[ Xtrain, Ytrain, Xtest, Ytest ] = generateKfolds(X1, Y1, 5, 1);
 for n = 1:length(lambdamat)
     lambda = lambdamat(n);
     for i = 1:5

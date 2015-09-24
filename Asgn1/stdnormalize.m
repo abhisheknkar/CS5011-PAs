@@ -1,4 +1,5 @@
-function [ in ] = stdnormarlize( in )
-    in = (in - repmat(mean(in,1),size(in,1),1)) ./ repmat(std(in,1),size(in,1),1);
+function [ in, mu, sigma ] = stdnormarlize( in )
+    mu = mean(in,1);
+    sigma = std(in,1);
+    in = (in - repmat(mu,size(in,1),1)) ./ repmat(sigma,size(in,1),1);
 end
-

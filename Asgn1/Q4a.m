@@ -32,4 +32,28 @@ else
 end
 
 %% Train classifier
-model = svmtrain(Xtrain, Ytrain);
+% model = svmtrain(Xtrain, Ytrain);
+[Xtrainf Ytrainf Xtestf Ytestf] = generateKfolds(Xtrain, Ytrain, 5, 1);
+numTest = size(Xtestf,1);
+numLabels = 4;
+acc = zeros(5,1);
+C = cell(5,1);
+model = cell(numLabels,1);
+for i = 1:5
+    for k=1:numLabels
+%         model{k} = svmtrain(Xtrainf{i}, double(Ytrainf{i}==k));
+        model{k} = svmtrain(Xtrainf{i}, double(Ytrainf{i}==k), '-s 0 -t 0 -g 0.2 -c 1 -b 1');
+    end
+    prob = zeros(numTest,numLabels);
+    for k=1:numLabels
+        [~,~,p] = svmpredict(Ytestf{i}==k, Xtestf{i}, model{k}, '-b 1');
+        prob(:,k) = p(:,model{k}.Label==1);    %# probability of class==k
+    end
+
+    %# predict the class with the highest probability
+    [~,pred] = max(prob,[],2);
+    acc(i) = sum(pred == Ytestf{i}) ./ numel(Ytestf{i})    %# accuracy
+    C{i} = confusionmat(Ytestf{i}, pred)                   %# confusion matrix    
+end
+
+

@@ -1,11 +1,7 @@
 clc;clear all;close all;
 % The second feature is the best according to pca()
 % Read: http://matlabdatamining.blogspot.in/2010/02/principal-components-analysis.html
-<<<<<<< HEAD
 % Q: What is the decision boundary?
-=======
->>>>>>> ad2a76bf3f742161301959afe352f343d2b781dc
-
 Xtrain = csvread('data/DS3/train.csv');
 Ytrain = csvread('data/DS3/train_labels.csv');
 Xtest = csvread('data/DS3/test.csv');
@@ -37,15 +33,12 @@ BETA = Xtrain1D\Ytrain;
 [coeff2,score2,latent2] = pca(Xtest);
 Xtest1D = score2(:,1);
 % scatter(Xtest1D,Ytest);
-<<<<<<< HEAD
 YhattestLR(BETA*Xtest1D<=0) = 1;
 YhattestLR(BETA*Xtest1D>0) = 2;
 
 [pr1 re1 f1 pr2 re2 f2] = PR2class(Ytest, YhattestLR, 1, 2);
 
 % scatter(Xtest1D, Yhattest, 'r');
-Q3b
-=======
 Yhattest(Xtest1D<=1.5) = 1;
 Yhattest(Xtest1D>1.5) = 2;
 
@@ -62,4 +55,3 @@ pr1 = length(TP)/length(P)
 re1 = length(TP)/(length(TP)+length(FN))
 pr2 = length(TN)/length(N)
 re2 = length(FP)/(length(FP)+length(TN))
->>>>>>> ad2a76bf3f742161301959afe352f343d2b781dc
