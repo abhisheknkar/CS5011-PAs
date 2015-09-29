@@ -25,10 +25,10 @@ if totrain
         for j = 1:size(files,1)
             isspam = ~isempty(strfind(files(j).name,'spm'));
             if isspam & trainortest
-                Xtrain_spam = updateXfrommail(Xtrain_spam, [foldername files(j).name], 1, 'multinomial');
+                Xtrain_spam = updateXfrommail(Xtrain_spam, [foldername files(j).name], 1, 'binomial');
                 spam_count = spam_count + isspam;
             elseif ~isspam & trainortest
-                Xtrain_ham = updateXfrommail(Xtrain_ham, [foldername files(j).name],  1, 'multinomial');
+                Xtrain_ham = updateXfrommail(Xtrain_ham, [foldername files(j).name],  1, 'binomial');
                 ham_count = ham_count + (1-isspam);
 %             elseif isspam & ~trainortest
 %                 Xtest_spam = updateXfrommail(Xtest_spam, [foldername files(j).name], 1);
@@ -51,9 +51,9 @@ if totrain
     for i = 1:length(keys_spam)
         spam_li(keys_spam{i}) = (Xtrain_spam(keys_spam{i}) + 1) / (words_spam + length(Xtrain_spam));
     end
-    save('TRAIN_F1_Q5.mat', 'Xtrain_spam', 'Xtrain_ham', 'ham_count', 'spam_count', 'ham_li', 'spam_li', 'words_ham', 'words_spam');
+    save('TRAIN_F1_Q5b.mat', 'Xtrain_spam', 'Xtrain_ham', 'ham_count', 'spam_count', 'ham_li', 'spam_li', 'words_ham', 'words_spam');
 else 
-    load('TRAIN_F1_Q5.mat');
+    load('TRAIN_F1_Q5b.mat');
 end
 
 % Priors
