@@ -71,27 +71,21 @@ for i = testfolders
     files = dir([foldername '*.txt']);
     for j = 1:size(files,1)
         [i j]
-        P_ham = pi_ham; P_spam = pi_spam;
+        P_ham = log(pi_ham); P_spam = log(pi_spam);
         isspam = ~isempty(strfind(files(j).name,'spm'));
         Ytest(count) = ~isspam;  %True value
         [~,words] = updateXfrommail(test_map, [foldername files(j).name], 0, 'multinomial');
         for k = 1:length(words)
             if spam_li.isKey(words{k})
-                mult_spam = spam_li(words{k});
-                P_spam = P_spam * mult_spam;
+                P_spam = P_spam + log(spam_li(words{k}));
             else 
-                mult_spam = 1 / (words_spam + length(Xtrain_spam));
-                P_spam = P_spam * mult_spam;
+                P_spam = P_spam + log(1 / (words_spam + length(Xtrain_spam)));
             end
             if ham_li.isKey(words{k})
-                mult_ham = ham_li(words{k});
-                P_ham = P_ham * mult_ham;
+                P_ham = P_ham + log(ham_li(words{k}));
             else 
-                mult_ham = 1 / (words_ham + length(Xtrain_ham));
-                P_ham = P_ham * mult_ham;
+                P_ham = P_ham + log(1 / (words_ham + length(Xtrain_ham)));
             end
-            P_spam = P_spam / P_ham;
-            P_ham = 1;
 %             [mult_ham mult_spam]
         end
         Yhattest(count) = P_ham > P_spam;
