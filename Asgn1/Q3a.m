@@ -37,21 +37,3 @@ YhattestLR(BETA*Xtest1D<=0) = 1;
 YhattestLR(BETA*Xtest1D>0) = 2;
 
 [pr1 re1 f1 pr2 re2 f2] = PR2class(Ytest, YhattestLR, 1, 2);
-
-% scatter(Xtest1D, Yhattest, 'r');
-Yhattest(Xtest1D<=1.5) = 1;
-Yhattest(Xtest1D>1.5) = 2;
-
-%% Precision, Recall
-P = find(Yhattest == 1);
-TP = intersect(P, find(Ytest==1));
-FP = setdiff(P,TP);
-
-N = find(Yhattest == 2);
-TN = intersect(N, find(Ytest==2));
-FN = setdiff(P,TP);
-
-pr1 = length(TP)/length(P)
-re1 = length(TP)/(length(TP)+length(FN))
-pr2 = length(TN)/length(N)
-re2 = length(FP)/(length(FP)+length(TN))

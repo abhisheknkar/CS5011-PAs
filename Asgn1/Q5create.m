@@ -30,6 +30,6 @@ for iter = 1:5
             end
         end
     end
-    save(['Q5_' mode '.mat'], 'Xtrain', 'Ytrain', 'Xtest', 'Ytest');
+    save(['Q5Out/Q5_' mode '.mat'], 'Xtrain', 'Ytrain', 'Xtest', 'Ytest');
 end
 toc

@@ -29,5 +29,5 @@ for i = 1:10
         fclose(fid);
     end
 end
-% save('Q5wordmap.mat', 'wordmap');
+% save('Q5Out/Q5wordmap.mat', 'wordmap');
 toc
