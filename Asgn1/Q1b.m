@@ -17,4 +17,13 @@ OUT1b(OUT1b > mean(class)) = class(2);
 
 % figure, plot(Xtest*BETA); hold on;
 % plot(OUThat,'r');
-getMCE(Ytest, OUT1b);
+[wrongs MCE] = getMCE(Ytest, OUT1b);
+if wrongs < minwrongs
+    minwrongs = wrongs;
+    BETAmin = BETA;
+end
+if wrongs > maxwrongs
+    maxwrongs = wrongs;
+    BETAmax = BETA;
+end
+wrongsvec(end+1) = wrongs;    

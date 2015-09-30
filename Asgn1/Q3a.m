@@ -7,6 +7,10 @@ Ytrain = csvread('data/DS3/train_labels.csv');
 Xtest = csvread('data/DS3/test.csv');
 Ytest = csvread('data/DS3/test_labels.csv');
 % figure(1);scatter3(Xtrain(:,1),Xtrain(:,2),Xtrain(:,3));
+% xlabel('Feature 1');
+% ylabel('Feature 2');
+% zlabel('Feature 3');
+% title('3D plot of the data');
 
 %% Using the pca() approach
 % XtrainCen = (Xtrain - repmat(mean(Xtrain,1), size(Xtrain,1), 1))./repmat(std(Xtrain,1), size(Xtrain,1), 1);
@@ -24,8 +28,13 @@ Ytest = csvread('data/DS3/test_labels.csv');
 
 Xtrain1D = score(:,1);
 BETA = Xtrain1D\Ytrain;
-% scatter(Xtrain1D,Ytrain);
 
+Xtrain1D_cl1 = Xtrain1D(Ytrain==1);
+Ytrain1D_cl1 = Ytrain(Ytrain==1);
+Xtrain1D_cl2 = Xtrain1D(Ytrain==2);
+Ytrain1D_cl2 = Ytrain(Ytrain==2);
+scatter(Xtrain1D_cl1,Ytrain1D_cl1,'b');hold on;
+scatter(Xtrain1D_cl2,Ytrain1D_cl2,'r');
 %% Testing
 
 % XtestCen = (Xtest - repmat(mean(Xtest,1), size(Xtest,1), 1))./repmat(std(Xtest,1), size(Xtest,1), 1);
@@ -37,3 +46,4 @@ YhattestLR(BETA*Xtest1D<=0) = 1;
 YhattestLR(BETA*Xtest1D>0) = 2;
 
 [pr1 re1 f1 pr2 re2 f2] = PR2class(Ytest, YhattestLR, 1, 2);
+save('Q3Out/statsPCA.mat', 'pr1', 're1', 'f1', 'pr2', 're2', 'f2');
