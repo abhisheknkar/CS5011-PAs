@@ -27,14 +27,9 @@ function [ pr1, re1, f1, pr2, re2, f2 ] = Q5_NB( Xtrain, Ytrain, Xtest, Ytest, m
 [ pr1, re1, f1, pr2, re2, f2 ] = PR2class( Ytest, Yhattest, 1, 0 );    
 %     conf_mat = confusionmat(Ytest, Yhattest);
 Pnorm = norm01(P_ham-P_spam);
-% [Xpr,Ypr,Tpr,AUCpr] = perfcurve(Ytest, Pnorm, 1, 'xCrit', 'reca', 'yCrit', 'prec');
-% plot(Xpr,Ypr);
-% xlabel('Recall'); ylabel('Precision')
-% title(['PR curve for model ' mode ', ham class']);
-% print(['Q5Out/PR_' mode 'ham'],'-dpng');
-[Xpr,Ypr,Tpr,AUCpr] = perfcurve(1-Ytest, 1-Pnorm, 1, 'xCrit', 'reca', 'yCrit', 'prec');
+[Xpr,Ypr,Tpr,AUCpr] = perfcurve(Ytest, Pnorm, 1, 'xCrit', 'reca', 'yCrit', 'prec');
 plot(Xpr,Ypr);
 xlabel('Recall'); ylabel('Precision')
-title(['PR curve for model ' mode ', spam class']);
-print(['Q5Out/PR_' mode 'spam'],'-dpng');
+title('PR curve for model');
+save('Q5Out/PR_')
 end

@@ -47,4 +47,6 @@ end
 foutname = ['Q4Out/out_kernel_' kernel '.mat'];
 % save(foutname, 'perf');
 models = {'Linear', 'Polynomial', 'Gaussian', 'Sigmoid'};
-save(['Q4Out/model_' models{str2num(kernel)+1} '.mat'], 'model');
+[maxacc ind_maxacc] = max(acc(:,1)) 
+bestmodel = model{ind_maxacc};
+save(['Q4Out/model_' models{str2num(kernel)+1} '.mat'], 'bestmodel');
