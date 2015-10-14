@@ -14,6 +14,7 @@ function [ pr1, re1, f1, pr2, re2, f2 ] = PR2class( a, ahat, cl1, cl2 )
     re2 = length(TN)/(length(FP)+length(TN));
     f2 = 2*pr2*re2/(pr2+re2);
 %     C = confusionmat(a,ahat,'order',[cl1 cl2])
+    C = confusionmat(a,ahat)
     
     
 end
