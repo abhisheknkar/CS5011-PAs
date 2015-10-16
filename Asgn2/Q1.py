@@ -6,6 +6,7 @@ import pickle
 from skimage import io
 from sklearn.metrics import confusion_matrix
 from matplotlib.pyplot import *
+import math
 
 def output_activation(x,deriv=False):
     #Sigmoid
@@ -64,6 +65,12 @@ def encodeOneHot(Y):
         T[count][int(y)]=1
     return T
 
+def softmax(Y):
+    out = np.exp(Y)
+    outsum = np.tile(np.sum(out,1),(Y.shape[1],1)).T
+
+    return out/outsum
+
 def normalize(X,colwise=True):
     dim = int(colwise)
     Xmean = np.array([np.mean(X,0),]*X.shape[0])
@@ -86,6 +93,8 @@ def trainNetwork(hiddens=20, iterations=10000,mu_alpha=0.01,mu_beta=0.01):
     for j in range(iterations):
         Z = output_activation(np.dot(X,alpha))
         Y = output_activation(np.dot(Z,beta))
+        # Y = softmax(Y)
+
         R = Y - T
         delta = R*output_activation(Y,deriv=True)
         dR_dbeta = np.dot(Z.T,delta)    #Captain here: In A(mXn)*B(nXp), the middle dimension is what is summed over! *flies away*
@@ -112,6 +121,7 @@ def testNetwork(Xtest,alpha,beta):
     #Getting the Y's
     Z = output_activation(np.dot(Xtest,alpha))
     Y = output_activation(np.dot(Z,beta))
+    Y = softmax(Y)
     # print Y
     out = np.argmax(Y,1)
     return out
@@ -123,7 +133,7 @@ def getPRF(Ypred,Ytest,classes=4):
     print cm
     PRFmat = np.zeros((classes,3))
     for i in range(classes):
-        print np.sum(cm[:,i])
+        # print np.sum(cm[:,i])
         PRFmat[i,0] = float(cm[i,i]) / np.sum(cm[:,i])
         PRFmat[i,1] = float(cm[i,i]) / np.sum(cm[i,:])
         # print PRFmat[i,:]
@@ -145,6 +155,6 @@ if __name__ == '__main__':
     savepickle((alpha,beta,final_error),trainfile)
 
     # -----Testing Network---------
-    # (alpha,beta,final_error) = loadpickle(trainfile)
-    # Ypred = testNetwork(Xtest,alpha,beta)
-    # print getPRF(Ypred,Ytest)
+    (alpha,beta,final_error) = loadpickle(trainfile)
+    Ypred = testNetwork(Xtest,alpha,beta)
+    print getPRF(Ypred,Ytest)
