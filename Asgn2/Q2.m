@@ -1,82 +1,32 @@
+clc;clear all;close all;
+addpath(genpath('../../pmtk3/'))
 load fisheriris
-
-lqrparam = 2
-
-PL = meas(:,3);
-PW = meas(:,4);
-for i = 1:length(species)
-    species{i} = ['Iris-' species{i}];
-end
-
-h1 = gscatter(PL,PW,species,'krb','ov^',[],'off');
-legend('Setosa','Versicolor','Virginica','Location','best')
-hold on
-
-%% Linear classifier
-if lqrparam == 1
-    X = [PL,PW];
-    cls = fitcdiscr(X,species);
-
-    K = cls.Coeffs(2,3).Const; % First retrieve the coefficients for the linear
-    L = cls.Coeffs(2,3).Linear;% boundary between the second and third classes
-                               % (versicolor and virginica).
-
-    % Plot the curve K + [x,y]*L  = 0.
-    f = @(x1,x2) K + L(1)*x1 + L(2)*x2;
-    h2 = ezplot(f,[.9 7.1 0 2.5]);
-    h2.Color = 'r';
-    h2.LineWidth = 2;
-
-    % Now, retrieve the coefficients for the linear boundary between the first
-    % and second classes (setosa and versicolor).
-    K = cls.Coeffs(1,2).Const;
-    L = cls.Coeffs(1,2).Linear;
-
-    % Plot the curve K + [x1,x2]*L  = 0:
-    f = @(x1,x2) K + L(1)*x1 + L(2)*x2;
-    h3 = ezplot(f,[.9 7.1 0 2.5]);
-    h3.Color = 'k';
-    h3.LineWidth = 2;
-    axis([.9 7.1 0 2.5])
-    xlabel('Petal Length')
-    ylabel('Petal Width')
-    title('{\bf Linear Classification with Fisher Training Data}')
-end
-
-%% QDA
-if lqrparam == 2
-    cqs = fitcdiscr(X,species,...
-        'DiscrimType','quadratic');
-%     delete(h2); delete(h3) % First, remove the linear boundaries from the plot.
-
-    % Now, retrieve the coefficients for the quadratic boundary between the
-    % second and third classes (versicolor and virginica).
-    K = cqs.Coeffs(2,3).Const;
-    L = cqs.Coeffs(2,3).Linear;
-    Q = cqs.Coeffs(2,3).Quadratic;
-
-    % Plot the curve K + [x1,x2]*L + [x1,x2]*Q*[x1,x2]' = 0.
-    f = @(x1,x2) K + L(1)*x1 + L(2)*x2 + Q(1,1)*x1.^2 + ...
-        (Q(1,2)+Q(2,1))*x1.*x2 + Q(2,2)*x2.^2;
-    h2 = ezplot(f,[.9 7.1 0 2.5]);
-    h2.Color = 'r';
-    h2.LineWidth = 2;
-
-    % Now, retrieve the coefficients for the quadratic boundary between the
-    % first and second classes (setosa and versicolor).
-    K = cqs.Coeffs(1,2).Const;
-    L = cqs.Coeffs(1,2).Linear;
-    Q = cqs.Coeffs(1,2).Quadratic;
-
-    % Plot the curve K + [x1,x2]*L + [x1,x2]*Q*[x1,x2]'=0:
-    f = @(x1,x2) K + L(1)*x1 + L(2)*x2 + Q(1,1)*x1.^2 + ...
-        (Q(1,2)+Q(2,1))*x1.*x2 + Q(2,2)*x2.^2;
-    h3 = ezplot(f,[.9 7.1 0 1.02]); % Plot the relevant portion of the curve.
-    h3.Color = 'k';
-    h3.LineWidth = 2;
-    axis([.9 7.1 0 2.5])
-    xlabel('Petal Length')
-    ylabel('Petal Width')
-    title('{\bf Quadratic Classification with Fisher Training Data}')
-    hold off
+X = meas(:, 3:4);  % for illustrations use 2 species, 2 features
+labels = species;
+[y, support] = canonizeLabels(labels);
+% types = {'quadratic', 'linear', 'RDA'};
+types = {'RDA'};
+lambdamat = 10.^[-6:4];
+% lambdamat = 1:.1:2;
+for tt=1:length(types)
+    for i = lambdamat
+    if strcmp(types{tt},'RDA')
+        lambda = i;
+        model = discrimAnalysisFit(X, y, types{tt},'lambda',lambda);
+    else
+        model = discrimAnalysisFit(X, y, types{tt});
+    end
+    h = plotDecisionBoundary(X, y, @(Xtest)discrimAnalysisPredict(model, Xtest));
+    legend(h, support, 'Location', 'NorthWest');
+%     set(gca, 'Xtick', 5:8, 'Ytick', 2:0.5:4);
+    xlabel('X_1'); ylabel('X_2');
+    if strcmp(types{tt},'RDA')
+        title(['Discrim. analysis of type ', types{tt} ', lambda=' num2str(lambda)]);
+        saveas(gca,['Q2/' types{tt} ', lambda=' num2str(lambda) '.png']);
+    else
+        title(sprintf('Discrim. analysis of type %s', types{tt}));
+        saveas(gca,['Q2/' types{tt} '.png']);
+    end
+    end
+    close all
 end

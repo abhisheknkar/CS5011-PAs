@@ -1,0 +1,20 @@
+addpath(genpath('../../pmtk3/'))
+load fisheriris
+X = meas(:, 3:4);  % for illustrations use 2 species, 2 features
+labels = species;
+[y, support] = canonizeLabels(labels);
+% types = {'quadratic', 'linear', 'RDA'};
+types = {'RDA'};
+for tt=1:length(types)
+    if strcmp(types{tt},'RDA')
+        model = discrimAnalysisFit(X, y, types{tt},'lambda',1);
+    else
+        model = discrimAnalysisFit(X, y, types{tt});
+    end
+    h = plotDecisionBoundary(X, y, @(Xtest)discrimAnalysisPredict(model, Xtest));
+    title(sprintf('Discrim. analysis of type %s', types{tt}));
+    legend(h, support, 'Location', 'NorthWest');
+    set(gca, 'Xtick', 5:8, 'Ytick', 2:0.5:4);
+    xlabel('X_1'); ylabel('X_2');
+    save(
+end
