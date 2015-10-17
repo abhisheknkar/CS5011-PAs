@@ -22,10 +22,10 @@ for tt=1:length(types)
     xlabel('X_1'); ylabel('X_2');
     if strcmp(types{tt},'RDA')
         title(['Discrim. analysis of type ', types{tt} ', lambda=' num2str(lambda)]);
-        saveas(gca,['Q2/' types{tt} ', lambda=' num2str(lambda) '.png']);
+        saveas(gca,['Q3/' types{tt} ', lambda=' num2str(lambda) '.png']);
     else
         title(sprintf('Discrim. analysis of type %s', types{tt}));
-        saveas(gca,['Q2/' types{tt} '.png']);
+        saveas(gca,['Q3/' types{tt} '.png']);
     end
     end
     close all
