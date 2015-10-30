@@ -6,7 +6,6 @@ import pickle
 from skimage import io
 from sklearn.metrics import confusion_matrix
 from matplotlib import pyplot as plt
-
 import math
 
 def output_activation(x,deriv=False):
@@ -79,7 +78,7 @@ def normalize(X,colwise=True):
     Xnorm = (X - Xmean)/Xstd
     return Xnorm
 
-def trainNetwork(hiddens=20, iterations=10000,mu_alpha=0.01,mu_beta=0.01):
+def trainNetwork(hiddens=20, iterations=10000,gamma=0.01,mu_alpha=0.01,mu_beta=0.01):
     #Normalize X and encode Y
     X = normalize(Xtrain)
     T = encodeOneHot(Ytrain)
@@ -103,11 +102,11 @@ def trainNetwork(hiddens=20, iterations=10000,mu_alpha=0.01,mu_beta=0.01):
 
         R = Y - T
         delta = R*output_activation(Y,deriv=True)
-        dR_dbeta = np.dot(Z.T,delta)    #Captain here: In A(mXn)*B(nXp), the middle dimension is what is summed over! *flies away*
+        dR_dbeta = np.dot(Z.T,delta) + 1.0/Y.shape[0]*2*gamma*beta    #Captain here: In A(mXn)*B(nXp), the middle dimension is what is summed over! *flies away*
 
         s = np.dot(delta,beta.T) * output_activation(Z,deriv=True)
         s = s[:,:-1]
-        dR_dalpha = np.dot(X.T,s)
+        dR_dalpha = np.dot(X.T,s) + 1.0/Y.shape[0]*2*gamma*alpha
 
         beta -= dR_dbeta*mu_beta
         alpha -= dR_dalpha*mu_alpha
@@ -120,14 +119,13 @@ def trainNetwork(hiddens=20, iterations=10000,mu_alpha=0.01,mu_beta=0.01):
             print "j = " + str(j) + ", Error:" + str(curr_error)
     # print Y
     # plot(epochvals,errorvals)
-    # show()
     fig = plt.figure()
     plt.plot(epochvals,errorvals)
     fig.suptitle('Variation of Error vs Epochs', fontsize=20)
     plt.xlabel('Epochs', fontsize=18)
     plt.ylabel('RMS Error', fontsize=16)
     fig.savefig('Q1Out/errorvsepoch_' + str(hiddens) + ','+str(iterations) + '.jpg')
-
+    # show()
     return (alpha,beta,curr_error)
 
 def testNetwork(Xtest,alpha,beta):
@@ -141,7 +139,7 @@ def testNetwork(Xtest,alpha,beta):
     Z = np.concatenate((Z,ones_vec_beta),axis=1)
 
     Y = output_activation(np.dot(Z,beta))
-    Y = softmax(Y)
+    # Y = softmax(Y)
     # print Y
     out = np.argmax(Y,1)
     return out
@@ -150,6 +148,7 @@ def getPRF(Ypred,Ytest,classes=4):
     # print Ypred.T
     # print Ytest.T
     cm = confusion_matrix(Ytest.astype(int), Ypred.astype(int))
+    print cm
     PRFmat = np.zeros((classes,3))
     for i in range(classes):
         # print np.sum(cm[:,i])
@@ -157,7 +156,7 @@ def getPRF(Ypred,Ytest,classes=4):
         PRFmat[i,1] = float(cm[i,i]) / np.sum(cm[i,:])
         # print PRFmat[i,:]
         PRFmat[i,2] = 2*PRFmat[i,0]*PRFmat[i,1] / (PRFmat[i,0]+PRFmat[i,1])
-    return (cm,PRFmat)
+    return PRFmat
 
 if __name__ == '__main__':
     # ------Data acquisition-------
@@ -166,15 +165,13 @@ if __name__ == '__main__':
     (Xtrain,Ytrain,Xtest,Ytest) = loadpickle('Q1Out/data.pkl')
 
     # Network Parameters-----------
-    hiddens=10; iterations=1000; mu_alpha=0.01; mu_beta=0.01
+    hiddens=50; iterations=1000; mu_alpha=0.01; mu_beta=0.01; gamma = 0.01
     trainfile = "Q1Out/"+"train_"+str(hiddens)+","+str(iterations)+","+str(mu_alpha)+","+str(mu_beta)+".p"
 
     # -----Training Network--------
-    (alpha, beta, final_error) = trainNetwork(hiddens,iterations,mu_alpha,mu_beta)
+    (alpha, beta, final_error) = trainNetwork(hiddens,iterations,gamma,mu_alpha,mu_beta)
     savepickle((alpha,beta,final_error),trainfile)
     # -----Testing Network---------
     (alpha,beta,final_error) = loadpickle(trainfile)
     Ypred = testNetwork(Xtest,alpha,beta)
-    (cm,PRF) = getPRF(Ypred,Ytest)
-    np.savetxt('Q1Out/CM_' + str(hiddens) + ','+str(iterations) + '.txt',cm)
-    np.savetxt('Q1Out/PRF_' + str(hiddens) + ','+str(iterations) + '.txt',PRF)
+    print getPRF(Ypred,Ytest)

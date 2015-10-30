@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b78e6a-4240-4f19-9d86-8c71315e686b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn2/Q2.py" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q2.asv" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Q4testdata.mat" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Q4traindata.mat" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Xtest.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Xtrain.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Ypred.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Ytest.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\Ytrain.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\model.mm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q4\modelf01.mm" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn2/Q1.py" afterPath="$PROJECT_DIR$/Asgn2/Q1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn2/Q4.m" afterPath="$PROJECT_DIR$/Asgn2/Q4.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn2/Q1Out/train_20,1000,0.01,0.01.p" afterPath="$PROJECT_DIR$/Asgn2/Q1Out/train_20,1000,0.01,0.01.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Dropbox\Acads\Sem 9\RT - Machine Learning\ML_PA\Asgn2\Q2.m" afterPath="$PROJECT_DIR$/Asgn2/Q3.m" />
     </list>
     <ignored path="ML_PA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,17 +51,33 @@
       <file leaf-file-name="Q1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Asgn2/Q1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5167959">
-              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.6838341">
+              <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <element signature="e#224#311#0" expanded="false" />
-                <element signature="e#347#424#0" expanded="false" />
-                <element signature="e#456#561#0" expanded="false" />
-                <element signature="e#594#1772#0" expanded="false" />
-                <element signature="e#1799#1928#0" expanded="false" />
-                <element signature="e#1965#2125#0" expanded="false" />
-                <element signature="e#3378#3594#0" expanded="false" />
+                <element signature="e#365#442#0" expanded="false" />
+                <element signature="e#474#579#0" expanded="false" />
+                <element signature="e#612#1790#0" expanded="false" />
+                <element signature="e#1817#1946#0" expanded="false" />
+                <element signature="e#1968#2059#0" expanded="false" />
+                <element signature="e#2096#2256#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Q2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Asgn2/Q2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#364#441#0" expanded="false" />
+                <element signature="e#473#578#0" expanded="false" />
+                <element signature="e#611#1789#0" expanded="false" />
+                <element signature="e#1816#1945#0" expanded="false" />
+                <element signature="e#1967#2058#0" expanded="false" />
+                <element signature="e#2095#2255#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,6 +99,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Asgn2/Q2.py" />
         <option value="$PROJECT_DIR$/Asgn2/Q1.py" />
       </list>
     </option>
@@ -78,8 +110,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -104,7 +136,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -140,6 +171,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,6 +210,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ML_PA" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn2/Q1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Q2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_PA" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn2/Q2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -304,14 +353,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python.Q1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Q2" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.Q1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Q2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -329,16 +380,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3474843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23312236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -381,11 +432,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Anaconda/Lib/pickle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="9.877193">
           <caret line="1125" column="10" selection-start-line="1125" selection-start-column="10" selection-end-line="1125" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -397,19 +455,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn2/Q3.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn2/Q2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#364#441#0" expanded="false" />
+            <element signature="e#473#578#0" expanded="false" />
+            <element signature="e#611#1789#0" expanded="false" />
+            <element signature="e#1816#1945#0" expanded="false" />
+            <element signature="e#1967#2058#0" expanded="false" />
+            <element signature="e#2095#2255#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Asgn2/Q1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5167959">
-          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.6838341">
+          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <element signature="e#224#311#0" expanded="false" />
-            <element signature="e#347#424#0" expanded="false" />
-            <element signature="e#456#561#0" expanded="false" />
-            <element signature="e#594#1772#0" expanded="false" />
-            <element signature="e#1799#1928#0" expanded="false" />
-            <element signature="e#1965#2125#0" expanded="false" />
-            <element signature="e#3378#3594#0" expanded="false" />
+            <element signature="e#365#442#0" expanded="false" />
+            <element signature="e#474#579#0" expanded="false" />
+            <element signature="e#612#1790#0" expanded="false" />
+            <element signature="e#1817#1946#0" expanded="false" />
+            <element signature="e#1968#2059#0" expanded="false" />
+            <element signature="e#2096#2256#0" expanded="false" />
           </folding>
         </state>
       </provider>
