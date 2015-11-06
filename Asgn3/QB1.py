@@ -43,3 +43,4 @@ def get_ARFF_char(filename,outname=None,labelidx=0, delimiter0=','):
 
 if __name__ == "__main__":
     get_ARFF_char('DecisionTreesDatasets/agaricus-lepiota_train.data',delimiter0=',')
+    get_ARFF_char('DecisionTreesDatasets/agaricus-lepiota_test.data',delimiter0=',')

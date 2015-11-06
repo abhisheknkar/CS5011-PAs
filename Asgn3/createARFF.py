@@ -19,11 +19,15 @@ def gen_ARFF_header(arff_name, num_features, unique_features):
     header.append('@DATA\n')
     return header
 
-def get_ARFF(filename,delimiter0='\t'):
+def get_ARFF(filename,delimiter0='\t',normalize=0):
     print "Converting following file to ARFF: " + filename
     features = np.loadtxt(open(filename,"rb"),delimiter=delimiter0,skiprows=0)
     # features = np.loadtxt(filename, delimiter=' ')
-    print features
+    if normalize == 1:
+        features_norm = (features - np.mean(features))/ np.std(features)
+        features_norm[:,-1] = features[:,-1]
+        features = features_norm
+
     num_features = features.shape[1]
     features[:,-1] = map(int,features[:,-1])
     # print map(int,features[:,-1])
@@ -52,7 +56,7 @@ if __name__ == "__main__":
     inputfilesTXT += [each for each in inputfiles if each.endswith('.txt')]
     for file in inputfilesTXT:
         inputfile = 'ClusteringDatasets/'+file
-        get_ARFF(inputfile)
+        get_ARFF(inputfile,normalize=1)
 
     inputfilesCSV = []
     inputfilesCSV += [each for each in inputfiles if each.endswith('.csv')]

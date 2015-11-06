@@ -36,8 +36,6 @@ def getPurityMissingValues(filename):
         purity = -1
     return purity
 
-
-
 def getBatchPurity(folder):
     filenames = os.listdir(folder)
     f = open(folder + "purity.txt", 'w')
@@ -50,12 +48,12 @@ def getBatchPurity(folder):
     f.close()
 
 if __name__ == "__main__":
-    getBatchPurity("/home/csd154server/Q4Out/")
+    getBatchPurity("/home/csd154server/QA4Out/")
 '''
 Purity is always around 0.7
 Having large eps gives just 1 cluster
 Having large minpts gives noise labels
 For values of epsilon = 0.1 and minpts between 11 and 17, we get more than 1 cluster. The
-Extreme case: minpts=1,eps=0.05,clusters=22.arff: purity = 1.0
-Best: minpts=17,eps=0.1,clusters=2.arff: purity = 0.857908847185
+minpts=2,eps=0.05,clusters=12.arff: purity = 0.973190348525
+minpts=17,eps=0.1,clusters=2.arff: purity = 0.857908847185
 '''

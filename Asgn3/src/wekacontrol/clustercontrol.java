@@ -20,44 +20,71 @@ import weka.gui.visualize.PlotData2D;
 
 public class clustercontrol 
 {
-
+	static double epsmin=0.0;
+	static double epsmax=1.0;
+	static double epsdelta=0.05;
+	static int ptsmin = 1;
+	static int ptsmax = 20;
+	static int ptsdelta = 1;
+	
 	public static void main(String[] args) throws Exception
 	{
-		QA4();
+//		QA4();
+//		QA5();
+		QA6();
 	}
 
 	public static void QA4() throws Exception
 	{
-		String QA4Path = "/home/csd154server/ClusteringDatasets/Jain.arff";
-		String outfolder = "/home/csd154server/Q4Out/";
-		Instances QA4data = readData(QA4Path);
+		String arffPath = "/home/csd154server/ClusteringDatasets/Jain.arff";
+		String outfolder = "/home/csd154server/QA4Out/";
+		File outfolder0 = new File(outfolder);
+		outfolder0.mkdirs();
+		executeDBSCAN(arffPath, outfolder);
+	}
+
+	public static void QA5() throws Exception
+	{
+		String arffPath,outfolder;
+		arffPath = "/home/csd154server/ClusteringDatasets/Path-based.arff";
+		outfolder = "/home/csd154server/QA5Out_Path-based_DBSCAN/";
+//		arffPath = "/home/csd154server/ClusteringDatasets/Spiral.arff";
+//		outfolder = "/home/csd154server/QA5Out_Spiral_DBSCAN/";
+//		arffPath = "/home/csd154server/ClusteringDatasets/Flames.arff";
+//		outfolder = "/home/csd154server/QA5Out_Flames_DBSCAN/";
+		File outfolder0 = new File(outfolder);
+		outfolder0.mkdirs();
+		executeDBSCAN(arffPath, outfolder);
+	}
+
+	public static void QA6() throws Exception
+	{
+		String arffPath,outfolder;
+		arffPath = "/home/csd154server/ClusteringDatasets/D31.arff";
+		outfolder = "/home/csd154server/QA6Out_D31_DBSCAN/";
+		File outfolder0 = new File(outfolder);
+		outfolder0.mkdirs();
+		executeDBSCAN(arffPath, outfolder);
+	}
+	
+	public static void executeDBSCAN(String arffPath, String outfolder) throws Exception
+	{
+		Instances data = readData(arffPath);
 		int minpts = 5;
 		double eps = 1;
-		for(double j=0.0; j < 1; j = j + 0.05)
+		for(double j=epsmin; j < epsmax; j = j + epsdelta)
 		{
-			for (int i = 1; i < 20; ++i)
+			for (int i = ptsmin; i < ptsmax; i+=ptsdelta)
 			{
 				minpts = i;
 				eps = j;
 				String outfile = outfolder + "minpts="+i+",eps="+j+".arff";
 				
-				FilteredClusterer fc = createDBScanClusterer(QA4data, minpts, eps);
-				ClusterEvaluation eval = evaluateCluster(fc, QA4data, outfile);
+				FilteredClusterer fc = createDBScanClusterer(data, minpts, eps);
+				ClusterEvaluation eval = evaluateCluster(fc, data, outfile);
 				if (eval.getNumClusters() > 1)System.out.println("Minpts = " + i + ", eps = " + j + ", clusters = " + eval.getNumClusters());
-				
-//				saveInstanceasARFF(outfile, QA4data);
-//				weka.filters.unsupervised.attribute.AddCluster.useFilter(QA4data, fc)
 			}
 		}		
-	}
-	
-	public static void saveInstanceasARFF(String filename, Instances data) throws IOException
-	{
-		ArffSaver saver = new ArffSaver();
-		saver.setInstances(data);
-		saver.setFile(new File(filename));
-//		saver.setDestination(new File(filename));   // **not** necessary in 3.5.4 and later
-		saver.writeBatch();
 	}
 	
 	public static ClusterEvaluation evaluateCluster(FilteredClusterer fc, Instances data, String outfile) throws Exception
@@ -70,13 +97,16 @@ public class clustercontrol
 		outfile = outfile.substring(0, outfile.length()-5) + ",clusters="+Integer.toString(eval.getNumClusters()) + ".arff";
 //		System.out.println(eval.clusterResultsToString());
 		PlotData2D predData = ClustererPanel.setUpVisualizableInstances(data, eval);
-		
-		BufferedWriter writer = new BufferedWriter(new FileWriter(outfile));
-		writer.write(predData.getPlotInstances().toString());
-//		writer.write(data.toString());
-		writer.newLine();
-		writer.flush();
-		writer.close();
+
+		if(eval.getNumClusters()>1)
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outfile));
+			writer.write(predData.getPlotInstances().toString());
+//			writer.write(data.toString());
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
 		return eval;
 	}
 
@@ -106,15 +136,5 @@ public class clustercontrol
 		out.setClusterer(clusterer);
 		
 		return fc;
-//		clusterer.setDatabase_Type("weka.clusterers.forOPTICSAndDBScan.Databases.SequentialDatabase");
-//		clusterer.setDatabase_distanceType("weka.clusterers.forOPTICSAndDBScan.DataObjects.EuclidianDataObject");
-	}
-	
+	}	
 }
-
-//***Alternate but buggy way to build cluster, -R 3 doesn't work! ***
-//weka.clusterers.DBSCAN clusterer = new weka.clusterers.DBSCAN();
-//String optionstr = "-R 3 -E " + Double.toString(eps) + " -M " + Integer.toString(minpts) + " -I weka.clusterers.forOPTICSAndDBScan.Databases.SequentialDatabase -D weka.clusterers.forOPTICSAndDBScan.DataObjects.EuclideanDataObject";
-//clusterer.setOptions(optionstr.split(" "));
-//clusterer.buildClusterer(QA4data);
-

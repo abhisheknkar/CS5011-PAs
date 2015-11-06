@@ -2,12 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b78e6a-4240-4f19-9d86-8c71315e686b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn3/QA4.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q4_bad.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ML_PA.iml" afterPath="$PROJECT_DIR$/.idea/ML_PA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn3/QA5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn3/QA6.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=1.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=10.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=11.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=12.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=13.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=14.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=15.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=16.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=17.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=18.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=19.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=2.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=20.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=3.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=4.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=5.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=6.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=7.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=8.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=9.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/purityplot.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/QA4.py" afterPath="$PROJECT_DIR$/Asgn3/QA4.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/QB1.py" afterPath="$PROJECT_DIR$/Asgn3/QB1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/src/wekacontrol/clustercontrol.java" afterPath="$PROJECT_DIR$/Asgn3/src/wekacontrol/clustercontrol.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/createARFF.py" afterPath="$PROJECT_DIR$/Asgn3/createARFF.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ML_PA.iws" />
@@ -29,36 +66,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QA3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Asgn3/QA3.py">
+      <file leaf-file-name="createARFF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Asgn3/createARFF.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
               <folding>
-                <element signature="e#25#49#0" expanded="true" />
+                <element signature="e#25#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QA4.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Asgn3/QA4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84771574">
-              <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
-              <folding>
-                <element signature="e#24#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QB1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QB1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.84771574">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +109,11 @@
         <option value="$PROJECT_DIR$/Asgn2/Q2.py" />
         <option value="$PROJECT_DIR$/Asgn2/Q1.py" />
         <option value="$PROJECT_DIR$/Asgn3/QA3.py" />
+        <option value="$PROJECT_DIR$/Asgn3/createARFF.py" />
+        <option value="$PROJECT_DIR$/Asgn3/QA6.py" />
         <option value="$PROJECT_DIR$/Asgn3/QA4.py" />
+        <option value="$PROJECT_DIR$/Asgn3/QA5.py" />
+        <option value="$PROJECT_DIR$/Asgn3/QB1.py" />
       </list>
     </option>
   </component>
@@ -128,6 +159,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_PA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_PA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_PA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_PA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Asgn3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -139,58 +194,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.QA4">
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_PA" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Q1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_PA" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn2/Q1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Q2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_PA" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn2/Q2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.QB1">
     <configuration default="false" name="QA4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,7 +212,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="QA3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="QA5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -220,7 +224,58 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ML_PA" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn3/QA3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn3/QA5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="createARFF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_PA" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn3/createARFF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="QA6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_PA" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn3/QA6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="QB1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Asgn3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_PA" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Asgn3/QB1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -348,19 +403,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Q1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Q2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.QA4" />
-      <item index="4" class="java.lang.String" itemvalue="Python.QA3" />
+      <item index="0" class="java.lang.String" itemvalue="Python.QA4" />
+      <item index="1" class="java.lang.String" itemvalue="Python.QA5" />
+      <item index="2" class="java.lang.String" itemvalue="Python.createARFF" />
+      <item index="3" class="java.lang.String" itemvalue="Python.QA6" />
+      <item index="4" class="java.lang.String" itemvalue="Python.QB1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.QA4" />
-        <item index="1" class="java.lang.String" itemvalue="Python.QA3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Q1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Q2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.QB1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.QA6" />
+        <item index="2" class="java.lang.String" itemvalue="Python.QA5" />
+        <item index="3" class="java.lang.String" itemvalue="Python.QA4" />
+        <item index="4" class="java.lang.String" itemvalue="Python.createARFF" />
       </list>
     </recent_temporary>
   </component>
@@ -384,8 +439,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17632653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4371069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38122448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -393,10 +451,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4371069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38122448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -446,7 +501,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -464,7 +521,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,20 +594,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="547" column="0" selection-start-line="547" selection-start-column="0" selection-end-line="547" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
+    <entry file="file://$PROJECT_DIR$/Asgn3/QA6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn3/QA5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78680205">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn3/QA4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87309647">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Asgn3/QA3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3147208">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#25#49#0" expanded="true" />
@@ -556,12 +638,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Asgn3/QA4.py">
+    <entry file="file://$PROJECT_DIR$/Asgn3/createARFF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84771574">
-          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <element signature="e#24#49#0" expanded="true" />
+            <element signature="e#24#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
