@@ -1,0 +1,3 @@
+spiral.arff: purity = 1.0
+flames.arff: purity = 1.0
+pathbased.arff: purity = 0.753333333333

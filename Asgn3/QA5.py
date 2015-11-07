@@ -8,10 +8,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    getBatchPurity("/home/csd154server/QA5Out_Spiral_DBSCAN/")
-    getBatchPurity("/home/csd154server/QA5Out_Path-based_DBSCAN/")
-    getBatchPurity("/home/csd154server/QA5Out_Flames_DBSCAN/")
-    getBatchPurity("QA5Out_Hierarchical/")
+    # getBatchPurity("/home/csd154server/QA5Out_Spiral_DBSCAN/")
+    # getBatchPurity("/home/csd154server/QA5Out_Path-based_DBSCAN/")
+    # getBatchPurity("/home/csd154server/QA5Out_Flames_DBSCAN/")
+    getBatchPurity("QA5_Hierarchical/")
 
 '''
 Spiral:
