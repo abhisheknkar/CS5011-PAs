@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b78e6a-4240-4f19-9d86-8c71315e686b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn3/QA5.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Asgn3/QA6.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=1.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=10.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=11.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=12.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=13.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=14.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=15.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=16.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=17.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=18.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=19.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=2.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=20.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=3.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=4.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=5.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=6.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=7.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=8.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/clusterwise/k=9.arff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Asgn3/Q3Out/purityplot.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Aggregation.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Compound.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/D31.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Flames.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Jain.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Path-based.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/QA4.py" afterPath="$PROJECT_DIR$/Asgn3/QA4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/QB1.py" afterPath="$PROJECT_DIR$/Asgn3/QB1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/R15.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.arff" afterPath="$PROJECT_DIR$/Asgn3/ClusteringDatasets/Spiral.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/src/wekacontrol/clustercontrol.java" afterPath="$PROJECT_DIR$/Asgn3/src/wekacontrol/clustercontrol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/createARFF.py" afterPath="$PROJECT_DIR$/Asgn3/createARFF.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asgn3/QA6.py" afterPath="$PROJECT_DIR$/Asgn3/QA6.py" />
     </list>
     <ignored path="ML_PA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,11 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QB1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QA6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Asgn3/QA6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5076142">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="e#24#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QB1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84771574">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
               </folding>
@@ -110,10 +79,10 @@
         <option value="$PROJECT_DIR$/Asgn2/Q1.py" />
         <option value="$PROJECT_DIR$/Asgn3/QA3.py" />
         <option value="$PROJECT_DIR$/Asgn3/createARFF.py" />
-        <option value="$PROJECT_DIR$/Asgn3/QA6.py" />
         <option value="$PROJECT_DIR$/Asgn3/QA4.py" />
         <option value="$PROJECT_DIR$/Asgn3/QA5.py" />
         <option value="$PROJECT_DIR$/Asgn3/QB1.py" />
+        <option value="$PROJECT_DIR$/Asgn3/QA6.py" />
       </list>
     </option>
   </component>
@@ -194,7 +163,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.QB1">
+  <component name="RunManager" selected="Python.QA6">
     <configuration default="false" name="QA4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,8 +380,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.QB1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.QA6" />
+        <item index="0" class="java.lang.String" itemvalue="Python.QA6" />
+        <item index="1" class="java.lang.String" itemvalue="Python.QB1" />
         <item index="2" class="java.lang.String" itemvalue="Python.QA5" />
         <item index="3" class="java.lang.String" itemvalue="Python.QA4" />
         <item index="4" class="java.lang.String" itemvalue="Python.createARFF" />
@@ -598,16 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Asgn3/QA6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Asgn3/QA5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78680205">
@@ -638,6 +597,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Asgn3/createARFF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -648,12 +617,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Asgn3/QB1.py">
+    <entry file="file://$PROJECT_DIR$/Asgn3/QA6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84771574">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5076142">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
-            <element signature="e#24#43#0" expanded="true" />
+            <element signature="e#24#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

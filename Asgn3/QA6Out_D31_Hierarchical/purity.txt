@@ -1,0 +1,2 @@
+outWard.arff: purity = 1.0
+outWard_Ignoring2.arff: purity = 0.963225806452

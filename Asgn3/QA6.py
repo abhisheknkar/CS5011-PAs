@@ -8,4 +8,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    getBatchPurity("/home/csd154server/QA6Out_D31_DBSCAN/")
+    getBatchPurity("QA6Out_D31_DBSCAN/")
+    getBatchPurity("QA6Out_D31_Hierarchical/")
+
+'''
+K-means recovers all 32 clusters
+
+DBSCAN: Poor performance: eps=0.05, minpts=11...19 gives 5 clusters, purity=0.16129
+Reason: Clusters not well separated. Density is significant even in cluster gaps
+
+Hierarchical clustering gives a purity of 0.9632
+Ward property?
+'''
