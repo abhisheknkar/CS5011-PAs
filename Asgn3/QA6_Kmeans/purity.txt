@@ -1,0 +1,6 @@
+k=32.arff: purity = 0.87935483871
+k=128.arff: purity = 0.966774193548
+k=48.arff: purity = 0.957419354839
+k=56.arff: purity = 0.965483870968
+k=64.arff: purity = 0.967096774194
+k=40.arff: purity = 0.897096774194

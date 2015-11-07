@@ -8,8 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    getBatchPurity("QA6Out_D31_DBSCAN/")
-    getBatchPurity("QA6Out_D31_Hierarchical/")
+    # getBatchPurity("QA6Out_D31_DBSCAN/")
+    # getBatchPurity("QA6Out_D31_Hierarchical/")
+    getBatchPurity("QA6_Kmeans/")
 
 '''
 K-means recovers all 32 clusters
